@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Presentation</title>
+  <meta name="description" content="Watch this short presentation before it is taken down.">
+
+  <!-- Meta Pixel (TODO: replace META_PIXEL_ID) -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','META_PIXEL_ID');fbq('track','PageView');</script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+  <!-- VTurb Preload (TODO: replace vid-PLACEHOLDER with real VTurb ID) -->
+  <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+  <link rel="preload" href="https://scripts.converteai.net/00c3b583-8874-4e64-a32e-65f6dd9ba521/ab-test/vid-PLACEHOLDER/player.js" as="script" fetchpriority="high">
+  <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+
+  <!-- DNS-prefetch -->
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://m3u8.vturb.net">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br">
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="dns-prefetch" href="https://cdn.wellnesssciencehub.com">
+
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{background:#fff;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1c1e21;-webkit-font-smoothing:antialiased}
+
+    /* ===== Topo vermelho ===== */
+    .hero{background:#cc0000}
+    .takedown-bar{background:#a30000;padding:9px 16px;text-align:center;font-size:13px;font-weight:700;color:#fff;letter-spacing:.4px;text-transform:uppercase}
+    .takedown-bar .date{color:#ffe14d}
+    .video-section{padding:28px 16px 34px;display:flex;justify-content:center}
+    .video-container{width:100%;max-width:680px}
+    vturb-smartplayer{display:block;margin:0 auto;width:100%}
+
+    /* ===== Contador de viewers ===== */
+    .viewers{display:flex;align-items:center;justify-content:center;gap:9px;padding:0 16px 30px;background:#cc0000}
+    .viewers .live-dot{width:11px;height:11px;border-radius:50%;background:#ff2d2d;box-shadow:0 0 0 0 rgba(255,45,45,.7);animation:livePulse 1.5s infinite}
+    @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(255,45,45,.7)}70%{box-shadow:0 0 0 9px rgba(255,45,45,0)}100%{box-shadow:0 0 0 0 rgba(255,45,45,0)}}
+    .viewers .vtext{font-size:14px;font-weight:600;color:#fff}
+    .viewers .vcount{font-weight:800}
+
+    /* ===== Comentários (fundo branco) ===== */
+    .comments{max-width:680px;margin:0 auto;padding:34px 18px 60px;font-family:"Segoe UI","Segoe UI Historic",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+    .comments-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px}
+    .comments-header h2{font-size:18px;font-weight:700;color:#1c1e21}
+    .comments-header .sort{font-size:13px;color:#65676b}
+    .comment{display:flex;gap:10px;padding:11px 0;align-items:flex-start}
+    .comment.reply{margin-left:44px}
+    .avatar{width:40px;height:40px;border-radius:50%;flex-shrink:0;object-fit:cover}
+    .c-body{flex:1;min-width:0}
+    .c-bubble{background:#f0f2f5;border-radius:16px;padding:8px 14px;display:inline-block;max-width:100%}
+    .c-name{font-size:13.5px;font-weight:700;color:#050505;line-height:1.3}
+    .c-text{font-size:14px;color:#050505;line-height:1.45;margin-top:1px;word-wrap:break-word}
+    .c-meta{display:flex;gap:14px;padding:3px 14px 0;font-size:12px;color:#65676b;font-weight:600}
+    .c-meta span{cursor:pointer}
+    .c-meta span:hover{text-decoration:underline}
+    .c-meta .time{font-weight:400;cursor:default}
+    .c-meta .time:hover{text-decoration:none}
+    .c-likes{display:inline-flex;align-items:center;gap:4px;margin-top:5px;font-size:12px;color:#65676b}
+    .c-likes .rx{display:inline-flex}
+    .c-likes .rx i{width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-style:normal;border:2px solid #fff;margin-left:-5px}
+    .c-likes .rx i:first-child{margin-left:0}
+    .c-likes .like{background:linear-gradient(180deg,#2e89ff,#0866ff)}
+    .c-likes .love{background:linear-gradient(180deg,#ff7387,#f33e58)}
+    .load-more{display:block;width:100%;margin-top:16px;padding:11px;background:#e4e6eb;border:none;border-radius:8px;font-size:14px;font-weight:700;color:#1c1e21;cursor:pointer;font-family:inherit}
+
+    /* ===== Footer ===== */
+    .site-footer{background:#fff;border-top:1px solid #e5e5e5;padding:26px 20px;text-align:center;font-size:12px;color:#8a8d91;line-height:1.7}
+
+    @media(max-width:520px){
+      .video-section{padding:20px 12px 26px}
+      .comment.reply{margin-left:30px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================= TOPO VERMELHO ======================= -->
+  <header class="hero">
+    <div class="takedown-bar">
+      ⚠ This video will be taken down on <span class="date" id="takedown-date">--/--/----</span>
+    </div>
+
+    <div class="video-section">
+      <div class="video-container">
+        <!-- TODO: replace vid-PLACEHOLDER with the real VTurb player ID -->
+        <vturb-smartplayer id="ab-vid-PLACEHOLDER" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+        <script type="text/javascript">var s=document.createElement("script");s.src="https://scripts.converteai.net/00c3b583-8874-4e64-a32e-65f6dd9ba521/ab-test/vid-PLACEHOLDER/player.js";s.async=!0;document.head.appendChild(s);</script>
+      </div>
+    </div>
+
+    <div class="viewers">
+      <span class="live-dot"></span>
+      <span class="vtext"><span class="vcount" id="viewer-count">0</span> people watching now</span>
+    </div>
+  </header>
+
+  <!-- ======================= COMENTÁRIOS (FUNDO BRANCO) ======================= -->
+  <section class="comments" id="comments">
+    <div class="comments-header">
+      <h2>Comments</h2>
+      <span class="sort">Most relevant ▾</span>
+    </div>
+
+    <!-- TODO: substituir pelos comentarios exatos da referencia quando disponiveis -->
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/006.jpg" alt="Jason M.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Jason Miller</div>
+          <div class="c-text">I honestly didn't believe this would work. Sent the exact sequence last night and she replied in under 2 minutes. First time in months.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">42 min</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i><i class="love">❤</i></span> 184</div>
+      </div>
+    </div>
+
+    <div class="comment reply">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/007.jpg" alt="Derek W.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Derek Walsh</div>
+          <div class="c-text">Same here man. The part about the 4 words is unreal. Don't skip any of it.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">29 min</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i></span> 57</div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/008.jpg" alt="Anthony R.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Anthony Reed</div>
+          <div class="c-text">Been single for 3 years. Tried everything. This is the first thing that actually changed how women text me back. No games, just the sequence.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">1 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i><i class="love">❤</i></span> 233</div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/009.jpg" alt="Marcus T.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Marcus Talbot</div>
+          <div class="c-text">Watch the whole thing before you judge it. The explanation about why it works is what sold me.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">1 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i></span> 91</div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/010.jpg" alt="Ryan C.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Ryan Coleman</div>
+          <div class="c-text">Is this still available? The video says it's coming down soon and I want to show a friend.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">2 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i></span> 38</div>
+      </div>
+    </div>
+
+    <div class="comment reply">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/011.jpg" alt="Kevin B.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Kevin Brooks</div>
+          <div class="c-text">Still up for me. Watch it now before they take it offline.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">1 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i></span> 22</div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/012.jpg" alt="Brandon H.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Brandon Hayes</div>
+          <div class="c-text">My wife and I had basically stopped texting during the day. Used this and she sent me a message I can't repeat here 😅 Things changed fast.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">3 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i><i class="love">❤</i></span> 312</div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <img class="avatar" src="https://cdn.wellnesssciencehub.com/comentarios/masculinos/013.jpg" alt="Eric S.">
+      <div class="c-body">
+        <div class="c-bubble">
+          <div class="c-name">Eric Sullivan</div>
+          <div class="c-text">What I like is that it's not manipulation. It just makes you communicate in a way she actually responds to. Wish I'd seen this years ago.</div>
+        </div>
+        <div class="c-meta"><span>Like</span><span>Reply</span><span class="time">4 h</span></div>
+        <div class="c-likes"><span class="rx"><i class="like">👍</i></span> 76</div>
+      </div>
+    </div>
+
+    <button class="load-more" type="button">View more comments</button>
+  </section>
+
+  <footer class="site-footer">
+    Copyright © 2026. All rights reserved.<br>
+    This site is not part of the Facebook website or Meta Platforms, Inc.
+  </footer>
+
+  <script>
+    /* ===== Data de takedown (hoje + 2 dias) ===== */
+    (function(){
+      var d=new Date(); d.setDate(d.getDate()+2);
+      var mm=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0');
+      var el=document.getElementById('takedown-date');
+      if(el) el.textContent=mm+'/'+dd+'/'+d.getFullYear();
+    })();
+
+    /* ===== Contador de viewers ao vivo =====
+       Inicia entre 3123-5432. A cada 5-7s sobe 5-10, depois cai 1-3.
+       Saldo liquido positivo -> "sempre aumentando conforme o tempo". */
+    (function(){
+      var el=document.getElementById('viewer-count');
+      if(!el) return;
+      var rand=function(min,max){return Math.floor(Math.random()*(max-min+1))+min;};
+      var count=rand(3123,5432);
+      el.textContent=count.toLocaleString('en-US');
+
+      function tick(){
+        count+=rand(5,10);                              // sobe 5-10
+        el.textContent=count.toLocaleString('en-US');
+        setTimeout(function(){                          // depois cai 1-3
+          count-=rand(1,3);
+          if(count<3123) count=3123;
+          el.textContent=count.toLocaleString('en-US');
+        }, rand(1200,2200));
+        setTimeout(tick, rand(5000,7000));              // proximo ciclo em 5-7s
+      }
+      setTimeout(tick, rand(5000,7000));
+    })();
+  </script>
+
+  <!-- UTMify Pixel (TODO: replace UTMIFY_ID) -->
+  <script>
+    window.pixelId = "UTMIFY_ID";
+    var _up = document.createElement("script");
+    _up.setAttribute("async","");
+    _up.setAttribute("defer","");
+    _up.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(_up);
+  </script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+</body>
+</html>
